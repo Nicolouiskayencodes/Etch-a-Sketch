@@ -21,3 +21,17 @@ function makeGrid(n) {
 
 
 makeGrid(16);
+
+//Change grid size
+
+let button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  rows = prompt("How many rows and columns?");
+  if (rows <=100 && rows > 1) {
+    container.replaceChildren("")
+    makeGrid(rows);
+  } else {
+    alert("You must choose a number less than or equal to 100")
+  }
+})

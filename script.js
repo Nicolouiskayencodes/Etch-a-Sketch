@@ -8,8 +8,10 @@ function makeGrid(n) {
     for (let i=0; i<n; i++) {
       let pixel = document.createElement("div");
       pixel.classList.add("pixel");
+      let opac = 0
       pixel.addEventListener("mouseover", () =>{
-        pixel.classList.add("hover");
+        opac = opac+0.1
+        pixel.style.opacity = opac;
       });
       row.appendChild(pixel);
     }

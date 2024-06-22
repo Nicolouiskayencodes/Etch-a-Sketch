@@ -21,8 +21,9 @@
 .pixel {
   flex: 1;
   border: 1px solid black;
-  height: auto;
   aspect-ratio: 1/1;
+  background-color: black;
+  opacity: 0;
 }
 
 .hover {

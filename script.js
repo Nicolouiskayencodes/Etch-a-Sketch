@@ -10,7 +10,29 @@ function makeGrid(n) {
       pixel.classList.add("pixel");
       let opac = 0
       pixel.addEventListener("mouseover", () =>{
-        opac = opac+0.1
+        let color = Math.floor(Math.random()*10);
+        if (color === 0) {
+          pixel.style.backgroundColor = "black";
+        } else if (color === 1) {
+          pixel.style.backgroundColor = "red";
+        } else if (color === 2) {
+          pixel.style.backgroundColor = "blue";
+        } else if (color === 3) {
+          pixel.style.backgroundColor = "yellow";
+        } else if (color === 4) {
+          pixel.style.backgroundColor = "purple";
+        } else if (color === 5) {
+          pixel.style.backgroundColor = "green";
+        } else if (color === 6) {
+          pixel.style.backgroundColor = "orange";
+        } else if (color === 7) {
+          pixel.style.backgroundColor = "pink";
+        } else if (color === 8) {
+          pixel.style.backgroundColor = "cyan";
+        } else if (color === 9) {
+          pixel.style.backgroundColor = "brown";
+        }
+        opac = opac+0.1;
         pixel.style.opacity = opac;
       });
       row.appendChild(pixel);
